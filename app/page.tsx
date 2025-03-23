@@ -11,7 +11,6 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Nav from "@/components/Nav";
-import BackgroundImage from "@/components/BackgroundImage";
 import Team from "@/components/Team";
 import BackgroundImageSecond from "@/components/BackgroundImageSecond";
 import Back from "@/components/Back"
@@ -24,8 +23,6 @@ const Home = () => {
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden  ">
       <div className=" w-full">
         <Nav></Nav>
-        {/* <Back></Back> */}
-        {/* <BackgroundImage></BackgroundImage> */}
         <BackgroundImageSecond></BackgroundImageSecond>
         <HomePage></HomePage>
         <div className="mx-auto sm:px-10 px-5">
