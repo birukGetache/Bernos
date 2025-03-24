@@ -173,32 +173,134 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Security Engineer ",
-    desc: "we provide security for varous client",
+    title: "AI Automation & Development",
+    desc: "Designing and implementing AI automation solutions to streamline business processes and enhance productivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - Bernos Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "AI Agent Development",
+    desc: "Building intelligent AI agents for customer service, data processing, and automated decision-making systems.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "AI Project",
-    desc: "we can deliver ai app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "SaaS Solutions",
+    desc: "Developing scalable Software-as-a-Service platforms with cloud integration and subscription management.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Penetration Testing & Security",
+    desc: "Conducting comprehensive security audits, vulnerability assessments, and ethical hacking to identify and fix security flaws.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
+  {
+    id: 5,
+    title: "Website Development",
+    desc: "Creating responsive, high-performance websites with modern frameworks and CMS solutions.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 6,
+    title: "Mobile App Development",
+    desc: "Building cross-platform mobile applications for iOS and Android using React Native/Flutter with native features.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 7,
+    title: "Network Security & Infrastructure",
+    desc: "Designing secure network architectures, implementing firewalls, and building robust IT infrastructure.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 8,
+    title: "ERP System Solutions",
+    desc: "Implementing enterprise resource planning systems for inventory, accounting, and business process management.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+  {
+    id: 9,
+    title: "API Integration & SEO Automation",
+    desc: "Developing custom API integrations and automated SEO solutions to enhance digital presence.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 10,
+    title: "Content Creation & Digital Marketing",
+    desc: "Producing engaging content and executing data-driven digital marketing campaigns across platforms.",
+    className: "md:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 11,
+    title: "Logo & Graphics Design",
+    desc: "Creating professional branding packages including logos, visual identities, and marketing materials.",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  }
+];
+export const teams = [
+
+  {
+    id: 2,
+    title: "Nahom Keneni",
+    desc: " CEO , backend Developer ",
+    className: "md:col-span-1", // change to md:col-span-2
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 3,
+    title: "Khalid",
+    desc: "Project Manager , Lamp Developer",
+    className: "md:col-span-1", // change to md:col-span-2
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 6,
+    title: "MERN stack developer",
+    desc: "Danawit",
+    className: "md:col-span-1",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 6,
+    title: "sales and Marketing manager",
+    desc: "Selam",
+    className: "md:col-span-1",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 4,
+    title: "Biruk Getachew",
+    desc: "Full stack Developer",
+    className: "md:col-span-1",
+    thumbnail: "/exp4.svg",
+  },
+    {
+    id: 1,
+    title: "Security Engineer ",
+    desc: "Natnael",
+    className: "md:col-span-1",
+    thumbnail: "/exp1.svg",
+  },
+    {
+    id: 6,
+    title: "Ai developer",
+    desc: "Anania",
+    className: "md:col-span-1",
+    thumbnail: "/exp1.svg",
+  },
+    
 ];
 
 export const socialMedia = [

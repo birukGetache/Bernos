@@ -1,40 +1,58 @@
 "use client";
 
 import { navItems } from "@/data";
+import dynamic from "next/dynamic";
+// Static imports
+const Hero = dynamic(() => import("@/components/Hero"), {
+  ssr: false,
+  loading: () => <div className="w-full h-[80vh] bg-transparent" /> // Adjust loading placeholder
+});
 
-import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
-import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import Nav from "@/components/Nav";
+const Experience = dynamic(
+  () => import("@/components/Experience"),
+  { 
+    ssr: false, // Disable server-side rendering if needed
+    loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse" /> // Loading placeholder
+  }
+);
+const RecentProjects = dynamic(
+  () => import('@/components/RecentProjects'),
+  { 
+    ssr: false, // Disable server-side rendering if needed
+    loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse" /> // Loading placeholder
+  }
+);
 import Team from "@/components/Team";
-import BackgroundImageSecond from "@/components/BackgroundImageSecond";
-import Back from "@/components/Back"
-import dynamic from "next/dynamic";
-const HomePage = dynamic(() => import("@/components/HomePage"), {
-  ssr: false,
-});
+
+
+const FloatingNav = dynamic(
+  () => import("@/components/ui/FloatingNavbar")
+    .then((mod) => mod.FloatingNav),
+  { 
+    ssr: false,
+    loading: () => <div className="w-full h-12 bg-transparent" />
+  }
+);
+
+
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden  ">
-      <div className=" w-full">
-        <Nav></Nav>
-        <BackgroundImageSecond></BackgroundImageSecond>
-        <HomePage></HomePage>
-        <div className="mx-auto sm:px-10 px-5">
-   <Grid />
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-7xl w-full">
+        <FloatingNav 
+          navItems={navItems} 
+          className="your-custom-class-here" // optional
+        />
+        <Hero />
+        <Grid />
         <RecentProjects />
         <Clients />
         <Experience />
-        <Approach />
-        <Team></Team>
+        <Team />
         <Footer />
-        </div>
-     
       </div>
     </main>
   );
