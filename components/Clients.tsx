@@ -4,8 +4,15 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import dynamic from "next/dynamic";
-const InfiniteMovingCards = dynamic(() => import("./ui/InfiniteCards"), { ssr: false });
 
+const InfiniteMovingCards = dynamic(
+  () => import("./ui/InfiniteCards")
+    .then((mod) => mod.InfiniteMovingCards),
+  { 
+    ssr: false,
+    loading: () => <div className="w-full h-12 bg-transparent" />
+  }
+);
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
