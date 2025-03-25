@@ -10,7 +10,7 @@ const Hero = dynamic(() => import("@/components/Hero"), {
 
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-import Clients from "@/components/Clients";
+const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
 const Experience = dynamic(
   () => import("@/components/Experience"),
   { 
