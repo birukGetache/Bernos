@@ -7,8 +7,10 @@ const Hero = dynamic(() => import("@/components/Hero"), {
   ssr: false,
   loading: () => <div className="w-full h-[80vh] bg-transparent" /> // Adjust loading placeholder
 });
-
-import Grid from "@/components/Grid";
+// Dynamically import Grid
+const Grid = dynamic(() => import("@/components/Grid"), {
+  ssr: false, // Optional: Disable server-side rendering if needed
+});
 import Footer from "@/components/Footer";
 const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
 const Experience = dynamic(

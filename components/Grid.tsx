@@ -1,5 +1,13 @@
 import { gridItems } from "@/data";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import dynamic from "next/dynamic";
+
+// Dynamically import BentoGrid and BentoGridItem
+const BentoGrid = dynamic(() => import("./ui/BentoGrid").then((mod) => mod.BentoGrid), {
+  ssr: false,  // You can disable server-side rendering if needed
+});
+const BentoGridItem = dynamic(() => import("./ui/BentoGrid").then((mod) => mod.BentoGridItem), {
+  ssr: false,  // Disable server-side rendering if needed
+});
 
 const Grid = () => {
   return (
