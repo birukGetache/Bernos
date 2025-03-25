@@ -25,7 +25,13 @@ const RecentProjects = dynamic(
     loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse" /> // Loading placeholder
   }
 );
-import Team from "@/components/Team";
+const Team = dynamic(
+  () => import('@/components/Team'),
+  { 
+    ssr: false, // Disable server-side rendering if needed
+    loading: () => <div className="h-[500px] w-full bg-gray-100 animate-pulse" /> // Loading placeholder
+  }
+);
 
 
 const FloatingNav = dynamic(
